@@ -1,0 +1,34 @@
+/*==========================================================================================================================================
+/*==========================================================================================================================================
+	10.Responsive Design Setup
+============================================================================================================================================
+============================================================================================================================================*/
+
+    /*========== M E D I U M     S C R E E N =============*/
+
+    @media only screen and (max-width : 767px) {
+
+        .header-bar { position: fixed; top: -50px; left: 0; opacity: 0; background-color: #000000; z-index: 0; width: 100%; height: 50px; padding: 15px 20px; overflow-y: visible; }
+        .header-bar.active { left: 0; top: 0; opacity: 1; z-index: 9999; }
+        .header-bar .menu-nav { display: block; position: relative; margin-bottom: 0; width: 20px; height: 20px; top: 2px; right: auto; z-index: 1001; float: right; }
+        .header-bar .menu-nav span { display: block; position: absolute; margin-top: -4px; top: 50%; left: 0; width: 100%; height: 2px; background-color: #aaaaaa; }
+        .header-bar .logo-mini { display: none; }        
+		.header-bar .logo-mobile { display: block; }
+		.logo-mobile > p { display: inline-block; margin: 0 0 0 5px; }		
+        .header-bar .share-mini { display: none; }
+        .header-bar .filter-mini { position: absolute; width: 100%; height: 100%; top: 50px; left: 0; z-index: 1000; background-color: #121212; }
+        .header-bar .filter-mini .filter { display: none; }
+        .header-bar .filter-mini .categories { position: relative; width: 100%; height: 100%; text-align: center; top: 0; left: 0; font-size: 0; padding: 0; display: block; }
+        .header-bar .filter-mini .categories a { background-color: transparent; }
+        .header-bar .filter-mini .categories a.cat-all { display: inline-block; }
+
+    }
+
+
+    /*========== S M A L L     S C R E E N =============*/
+
+    @media only screen and (max-width : 480px) {                
+	
+		.header-bar .filter-mini .categories a { padding: 12px; }
+
+    }
